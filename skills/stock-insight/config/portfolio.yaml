@@ -1,0 +1,23 @@
+# Stock Insight 持仓配置
+# 修改这里的持仓信息，系统会自动读取
+
+portfolio:
+  - name: 示例股票A
+    code: "600000"
+    market: sh
+    shares: 1000
+    cost: 10.00
+  - name: 示例股票B
+    code: "000001"
+    market: sz
+    shares: 500
+    cost: 15.00
+
+# 止损设置
+settings:
+  stop_loss_warn: -5       # 预警线（%）
+  stop_loss_cut: -10       # 减仓线（%）
+  stop_loss_clear: -20     # 清仓线（%）
+  max_single_position: 0.4 # 单只最大仓位（40%）
+  max_drawdown_half: -3    # 回撤降半仓（%）
+  max_drawdown_clear: -5   # 回撤清仓（%）
