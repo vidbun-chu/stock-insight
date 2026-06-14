@@ -51,7 +51,7 @@ def get_stock_quote(code: str, market: str = 'sh') -> Optional[StockQuote]:
     """获取个股实时行情
     
     Args:
-        code: 股票代码，如 '600089'
+        code: 股票代码，如 '600000'
         market: 市场，'sh' 或 'sz'
     
     Returns:

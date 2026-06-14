@@ -2,16 +2,16 @@
 # 修改这里的持仓信息，系统会自动读取
 
 portfolio:
-  - name: 特变电工
-    code: "600089"
+  - name: 示例股票A
+    code: "600000"
     market: sh
-    shares: 1200
-    cost: 23.216
-  - name: 中远海控
-    code: "601919"
-    market: sh
-    shares: 1700
-    cost: 14.744
+    shares: 1000
+    cost: 10.00
+  - name: 示例股票B
+    code: "000001"
+    market: sz
+    shares: 500
+    cost: 15.00
 
 # 止损设置
 settings:

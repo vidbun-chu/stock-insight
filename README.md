@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ```bash
 # 1. 查看持仓股实时行情
-python src/stock_monitor.py --stock 600089 601919
+python src/stock_monitor.py --stock 600000 000001
 
 # 2. 获取大盘数据
 python src/market_overview.py
@@ -65,7 +65,7 @@ python src/market_cycle.py
 ### 1. 持仓监控
 
 ```bash
-python src/stock_monitor.py --stock 600089 601919 --cost 23.216 14.744
+python src/stock_monitor.py --stock 600000 000001 --cost 10.00 15.00
 ```
 
 输出：
@@ -73,8 +73,8 @@ python src/stock_monitor.py --stock 600089 601919 --cost 23.216 14.744
 ┌──────────────┬────────┬────────┬──────────┬──────────┐
 │ 股票         │ 现价   │ 涨跌   │ 成本     │ 盈亏     │
 ├──────────────┼────────┼────────┼──────────┼──────────┤
-│ 特变电工     │ 23.03  │ +1.23% │ 23.216   │ -0.8%    │
-│ 中远海控     │ 14.57  │ +2.39% │ 14.744   │ -1.2%    │
+│ 示例股票A    │ 10.20  │ +0.50% │ 10.00    │ +2.0%    │
+│ 示例股票B    │ 14.80  │ -0.30% │ 15.00    │ -1.3%    │
 └──────────────┴────────┴────────┴──────────┴──────────┘
 ```
 
@@ -147,16 +147,16 @@ stock-insight/
 
 ```yaml
 portfolio:
-  - name: 特变电工
-    code: "600089"
+  - name: 示例股票A
+    code: "600000"
     market: sh
-    shares: 1200
-    cost: 23.216
-  - name: 中远海控
-    code: "601919"
+    shares: 1000
+    cost: 10.00
+  - name: 示例股票B
+    code: "000001"
     market: sh
-    shares: 1700
-    cost: 14.744
+    shares: 500
+    cost: 15.00
 
 settings:
   stop_loss_warn: -5      # 预警线
